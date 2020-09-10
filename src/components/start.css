@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+.paper {
+  position: absolute;
+  top: -48px;
+  left: -36px;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  z-index: 3;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 0 7px 0 0 rgb(185, 184, 184);
+}
+.paper-outline {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  position: absolute;
+  top: -68px;
+  left: -56px;
+  box-shadow: inset 0 -6px 0px -0px hsl(230, 56%, 41%);
+}
+.scissors {
+  position: absolute;
+  top: -48px;
+  right: -36px;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  z-index: 3;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 0 7px 0 0 rgb(185, 184, 184);
+}
+.scissors-outline {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  position: absolute;
+  top: -67px;
+  right: -56px;
+  box-shadow: inset 0 -6px 0px -0px hsl(39, 78%, 34%);
+}
+.rock {
+  position: absolute;
+  left: 89px;
+  top: 182px;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  z-index: 3;
+  cursor: pointer;
+  border: none;
+  box-shadow: inset 0 7px 0 0 rgb(185, 184, 184);
+}
+.rock-outline {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  position: absolute;
+  left: 68px;
+  top: 162px;
+  box-shadow: inset 0 -6px 0px -0px hsl(349, 65%, 39%);
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
+    width: 144.3vw;
+    height: 144.3vh;
+  }
+  .triangle-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-28%, 6%);
+  }
+}
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
+    width: 146.1vw;
+    height: 146.3vh;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .container {
+    width: 148.2vw;
+    height: 148.4vh;
+  }
+}

@@ -1,0 +1,109 @@
+.rules-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 100px;
+  height: 35px;
+  border-radius: 20%;
+  border: 2px solid rgb(185, 184, 184);
+  background: hsl(237, 49%, 15%);
+  color: rgb(185, 184, 184);
+  cursor: pointer;
+}
+.background-modal-container {
+  background-color: black;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+}
+.rules-image-card {
+  z-index: 200;
+  background-color: white;
+  width: 350px;
+  height: 393px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: fixed;
+  top: calc(50% - 196.5px);
+  left: calc(50% - 175px);
+}
+.rules-image {
+  z-index: 200;
+  margin-left: 22px;
+  margin-top: 10px;
+}
+.rules-text-modal {
+  font-weight: 600;
+  font-size: 30px;
+  color: hsl(237, 49%, 15%);
+  margin-left: 21px;
+  margin-top: 30px;
+}
+.icon-close {
+  margin-left: 131px;
+  margin-top: 34px;
+  cursor: pointer;
+}
+#invisible {
+  visibility: hidden;
+}
+#visible {
+  visibility: visible;
+}
+/* ----------- iPhone 4 and 4S ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .rules-button {
+    bottom: -180px;
+    right: 30px;
+    width: 100px;
+    height: 35px;
+  }
+  .background-modal-container {
+    width: 146vw;
+    height: 146vh;
+  }
+}
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .rules-button {
+    bottom: -180px;
+    right: 30px;
+    width: 100px;
+    height: 35px;
+  }
+  .background-modal-container {
+    width: 146vw;
+    height: 146vh;
+  }
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .rules-button {
+    bottom: -180px;
+    right: 46px;
+    width: 100px;
+    height: 35px;
+  }
+}
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .rules-button {
+    bottom: -180px;
+    right: 46px;
+    width: 100px;
+    height: 35px;
+  }
+  .background-modal-container {
+    width: 148vw;
+    height: 148vh;
+  }
+}

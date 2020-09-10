@@ -1,0 +1,207 @@
+.play-container {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: none;
+  position: absolute;
+  transform: translate(-85%, 60%);
+  box-shadow: inset 0 10px 0 0 rgb(185, 184, 184);
+  z-index: 100;
+}
+.player1Icon {
+  width: 80px;
+}
+.player2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: none;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  position: absolute;
+  transform: translate(90%, 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.player1-paper-outline {
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  border: none;
+  position: absolute;
+  transform: translate(-66%, 46%);
+  background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  box-shadow: inset 0 -10px 0px -0px hsl(230, 56%, 41%);
+  z-index: 100;
+}
+.player1-scissors-outline {
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  border: none;
+  position: absolute;
+  transform: translate(-66%, 46%);
+  background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  box-shadow: inset 0 -10px 0px -0px hsl(39, 78%, 34%);
+  z-index: 100;
+}
+.player1-rock-outline {
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  border: none;
+  position: absolute;
+  transform: translate(-66%, 46%);
+  background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  box-shadow: inset 0 -10px 0px -0px hsl(349, 65%, 39%);
+  z-index: 100;
+}
+.you-picked {
+  position: absolute;
+  transform: translate(-173px, -71px);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  z-index: 100;
+}
+.house-picked {
+  position: absolute;
+  transform: translate(183px, -71px);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  z-index: 100;
+}
+.player2Button {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: none;
+  box-shadow: inset 0 10px 0 0 rgb(185, 184, 184);
+  z-index: 100;
+}
+.player2-paper-outline {
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  border: none;
+  position: absolute;
+  transform: translate(69%, 46%);
+  background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  box-shadow: inset 0 -10px 0px -0px hsl(230, 56%, 41%);
+  z-index: 100;
+}
+.player2-scissors-outline {
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  border: none;
+  position: absolute;
+  transform: translate(69%, 46%);
+  background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  box-shadow: inset 0 -10px 0px -0px hsl(39, 78%, 34%);
+  z-index: 100;
+}
+.player2-rock-outline {
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  border: none;
+  position: absolute;
+  transform: translate(69%, 46%);
+  background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  box-shadow: inset 0 -10px 0px -0px hsl(349, 65%, 39%);
+  z-index: 100;
+}
+.winContainer {
+  position: absolute;
+  transform: translate(-3%, 106%);
+}
+.winOrLoseMessage {
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonToStartAgain {
+  width: 184px;
+  height: 46px;
+  border-radius: 10px;
+  border: none;
+}
+.linkToStartAgain {
+  text-decoration: none;
+  color: hsl(214, 47%, 23%);
+  font-weight: 600;
+}
+.winner1Outline {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  background: hsl(214, 43%, 34%);
+  position: absolute;
+  z-index: -98;
+  transform: translate(-108%, -31%);
+  opacity: 0.3;
+}
+.winner2Outline {
+  width: 450px;
+  height: 450px;
+  border-radius: 100%;
+  background: hsl(214, 47%, 23%);
+  position: absolute;
+  z-index: -99;
+  transform: translate(-95%, -36%);
+  opacity: 0.3;
+}
+.winner3Outline {
+  width: 550px;
+  height: 550px;
+  border-radius: 100%;
+  background: hsl(214, 47%, 23%);
+  position: absolute;
+  z-index: -100;
+  transform: translate(-87%, -39%);
+  opacity: 0.2;
+}
+.homeWinner3Outline {
+  width: 550px;
+  height: 550px;
+  border-radius: 100%;
+  background: hsl(214, 47%, 23%);
+  position: absolute;
+  z-index: -100;
+  transform: translate(24%, -38%);
+  opacity: 0.2;
+}
+.homeWinner2Outline {
+  width: 450px;
+  height: 450px;
+  border-radius: 100%;
+  background: hsl(214, 47%, 23%);
+  position: absolute;
+  z-index: -99;
+  transform: translate(40%, -36%);
+  opacity: 0.3;
+}
+.homeWinner1Outline {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  background: hsl(214, 43%, 34%);
+  position: absolute;
+  z-index: -98;
+  transform: translate(66%, -31%);
+  opacity: 0.3;
+}

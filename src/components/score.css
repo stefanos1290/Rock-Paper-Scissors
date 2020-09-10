@@ -1,0 +1,91 @@
+.headline-container {
+  width: 600px;
+  height: 140px;
+  top: 30px;
+  position: absolute;
+  border: 2px solid rgb(185, 184, 184);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -191%);
+  z-index: 100;
+}
+.rps-container {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: Barlow Semi Condensed;
+  color: white;
+  margin-top: 18px;
+  margin-left: 20px;
+}
+.score {
+  width: 150px;
+  height: 100px;
+  background-color: azure;
+  margin-left: -70px;
+  margin-top: 19px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* ----------- iPhone 4 and 4S ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .headline-container {
+    width: 409px;
+    grid-template-columns: repeat(6, 61px);
+    transform: translate(-33%, -157%);
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .headline-container {
+    width: 420px;
+    grid-template-columns: repeat(6, 64px);
+    transform: translate(-33%, -159%);
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .headline-container {
+    width: 496px;
+    grid-template-columns: repeat(6, 79px);
+    transform: translate(-33%, -209%);
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .headline-container {
+    width: 546px;
+    grid-template-columns: repeat(6, 89px);
+    transform: translate(-33%, -232%);
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .headline-container {
+    width: 509px;
+    grid-template-columns: repeat(6, 82px);
+    transform: translate(-33%, -246%);
+  }
+}
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .headline-container {
+    width: 467px;
+    grid-template-columns: repeat(6, 73px);
+    transform: translate(-32%, -200%);
+  }
+}
